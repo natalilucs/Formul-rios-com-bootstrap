@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários com bootstrap </title>
+    <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgba(184, 234, 238, 0.082);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Crie uma página utilizando as classes de bootstrap que contenha um formulário com campos de sua escolha. -->
+
+    <section class="container">
+
+
+        <div class="row">
+            <h2 class="display-2 text-center" style="color: aqua;">CADASTRE-SE</h2>
+        </div>
+
+        
+        
+        <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Insira seu nome</label>
+                <input type="text" class="form-control" placeholder="Insira seu nome" value="" id="nome" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="sr-only" >Insira seu sobrenome</label>
+                <input type="text" class="form-control" placeholder="Insira seu sobrenome" value="" id="sobrenome" required>
+                <!-- <div class="valid-feedback">
+                  Tudo certo!
+                </div> -->
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Insira seu email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Insira seu email" 
+              aria-describedby="inputGroupPrepend" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label class="sr-only">Cidade</label>
+                <input type="text" class="form-control" placeholder="Cidade" required>
+
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="sr-only">Estado</label>
+                <input type="text" class="form-control" placeholder="Estado" required>
+
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="sr-only">CEP</label>
+                <input type="text" class="form-control" placeholder="CEP" required>
+
+              </div>
+            </div>
+
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logradouro</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Rua</a>
+                <a class="dropdown-item" href="#">Alameda</a>
+                <a class="dropdown-item" href="#">Avenida</a>
+                <a class="dropdown-item" href="#">Estrada</a>
+                <a class="dropdown-item" href="#">Via</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Outros</a>
+            </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Input text com botão dropdown" placeholder="Ex. Estrada do M'boi Mirim, 211" required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1" class="sr-only">Tipo de residência</label>
+                <select class="form-control">
+                  <option>Apartamento</option>
+                  <option>Casa</option>
+                  <option>Chácara</option>
+                  <option>Condomínio</option>                  
+                </select>
+              </div>
+
+              
+            <button type="submit" class="btn btn-outline-info">Enviar Dados</button>
+            <button type="reset" class="btn btn-outline-warning">Limpar</button>
+
+
+            <div class="form-group row">
+                
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        Declaro que aceito e estou de acordo com os termos de compromisso!
+                    </label>
+                  </div>
+
+            </div>
+        </form>
+    </section>
+
+    <script>
+        // var nome = document.getElementById("nome")
+        // function valida_nome(x){
+        //     if(isNaN(nome)){
+        //         x.style.borderColor()
+        //     }
+
+        // }
+        
+    </script>
+
+    
+
+
+    <script src="../jquery-js/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
